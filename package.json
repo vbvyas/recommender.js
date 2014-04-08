@@ -1,0 +1,22 @@
+{
+  "name": "recommender.js",
+  "version": "0.0.0",
+  "description": "Book recommender based on Jaccard index of Book titles.",
+  "main": "recommender.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vbvyas/recommender.js.git"
+  },
+  "keywords": [
+    "jaccard",
+    "index",
+    "recommend",
+    "recommender",
+    "node"
+  ],
+  "author": "@vbvyas",
+  "license": "BSD"
+}
