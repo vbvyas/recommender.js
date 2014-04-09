@@ -6,7 +6,7 @@ require('sugar');
 // Based on a book title, recommend other titles
 function recommend(title) {
   // Create the index from the corpus
-  var indexes = indexCorpus('./', title);
+  var indexes = indexCorpus('./book-title-corpus.txt', title);
   
   // Return all titles with index greater than 0.5
   var recommendations = indexes.filter(function (n){
