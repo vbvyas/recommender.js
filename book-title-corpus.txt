@@ -1,0 +1,12 @@
+Node.js in Action
+Node.js the Right Way: Practical, Server-Side JavaScript That Scales
+Professional Node.js: Building Javascript Based Scalable Software
+Smashing Node.js: JavaScript Everywhere
+Express.js Guide: The Comprehensive Book on Express.js
+Node.js, MongoDB, and AngularJS Web Development (Developer's Library)
+Building Node Applications with MongoDB and Backbone
+Sams Teach Yourself Node.js in 24 Hours
+Learning Node.js: A Hands-On Guide to Building Web Applications in JavaScript
+The Node Beginner Book
+Mastering Node.js
+Building Hypermedia APIs with HTML5 and Node 
