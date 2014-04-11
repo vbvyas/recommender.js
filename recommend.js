@@ -25,6 +25,7 @@ function indexCorpus(path, title) {
   var fs = require('fs');
   
   var list = fs.readFileSync(path).toString().split("\n");
+  var stopWords = fs.readFileSync('./three-letter-stop-words.txt');
   
   // object to save book_title and it's corresponding index
   var map = [];
@@ -33,8 +34,8 @@ function indexCorpus(path, title) {
     var obj = {};
     obj.title = book_title;
     // Compute union of title and book_title
-    var a = words(book_title);
-    var b = words(title);
+    var a = words(book_title, stopWords);
+    var b = words(title, stopWords);
     var aub = union(a, b);
     // Compute intersection of title and book_title
     var anb = intersection(a, b);
@@ -56,12 +57,12 @@ function indexCorpus(path, title) {
 
 // Create a list of unique words of length greater than 2
 // from a sentence (book title in this case)
-function words(sentence) {
+function words(sentence, stopWords) {
   var words = sentence.words(function (w) {
     return w.toLowerCase();
   }).unique().sortBy();
   words = words.map(function (w) {
-    if (w.length > 2)
+    if (w.length > 2 && !stopWords.any(w))
       return w;
   });
   
