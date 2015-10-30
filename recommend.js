@@ -56,7 +56,7 @@ function indexCorpus(path, title) {
 }
 
 // Create a list of unique words of length greater than 2
-// and withou the common 3 letter English stop words
+// and without the common 3 letter English stop words
 // from a sentence (book title in this case)
 function words(sentence, stopWords) {
   var words = sentence.words(function (w) {
